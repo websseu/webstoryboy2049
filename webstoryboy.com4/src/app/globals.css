@@ -1,0 +1,457 @@
+@font-face {
+  font-family: 'NanumSquareNeo';
+  font-weight: 400; /* Regular */
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/NanumSquareNeo-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'NanumSquareNeo';
+  font-weight: 300; /* Light */
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/NanumSquareNeo-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'NanumSquareNeo';
+  font-weight: 700; /* Bold */
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/NanumSquareNeo-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'NanumSquareNeo';
+  font-weight: 800; /* ExtraBold */
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/NanumSquareNeo-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'NanumSquareNeo';
+  font-weight: 900; /* Black */
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/NanumSquareNeo-Black.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'NexonLv1Gothic';
+  font-weight: 300; /* Light */
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/NexonLv1Gothic-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'NexonLv1Gothic';
+  font-weight: 400; /* Regular */
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/NexonLv1Gothic-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'NexonLv1Gothic';
+  font-weight: 700; /* Bold */
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/NexonLv1Gothic-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'GmarketSans';
+  font-weight: 300; /* Light */
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/GmarketSans-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'GmarketSans';
+  font-weight: 500; /* Medium */
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/GmarketSans-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'GmarketSans';
+  font-weight: 700; /* Bold */
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/GmarketSans-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'NanumHuman';
+  font-weight: 200; /* ExtraLight */
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/NanumHuman-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'NanumHuman';
+  font-weight: 300; /* Light */
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/NanumHuman-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'NanumHuman';
+  font-weight: 400; /* Regular */
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/NanumHuman-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'NanumHuman';
+  font-weight: 700; /* Bold */
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/NanumHuman-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'NanumHuman';
+  font-weight: 800; /* ExtraBold */
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/NanumHuman-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'NanumHuman';
+  font-weight: 900; /* Black */
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/NanumHuman-Heavy.woff') format('woff');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --fontN: 'NanumSquareNeo', sans-serif;
+  --fontX: 'NexonLv1Gothic', sans-serif;
+  --fontG: 'GmarketSans', sans-serif;
+  --fontP: 'Poppins', sans-serif;
+  --fontH: 'NanumHuman', sans-serif;
+}
+
+a:focus {
+  outline: 2px solid red;
+}
+
+pre,
+code {
+  font-family: var(--fontN) !important;
+  line-height: 1.6 !important;
+  font-size: 14px !important;
+}
+code .linenumber {
+  font-style: normal !important;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--fontN), var(--fontP);
+  }
+}
+
+@layer components {
+  /* container */
+  .header__container {
+    @apply border-b-2 border-black dark:border-white;
+  }
+
+  .main__container {
+    @apply max-w-7xl mx-auto mt-4 sm:mt-10 py-4 px-4;
+  }
+
+  .refer__container {
+    @apply mx-auto w-full max-w-[1400px] border-x border-dashed;
+  }
+
+  .notice__container {
+    @apply max-w-3xl mx-auto mt-4 sm:mt-10 py-4 px-4;
+  }
+
+  .auth__container {
+    @apply max-w-[500px] mx-auto flex items-center justify-center h-screen;
+  }
+
+  .footer__container {
+    @apply max-w-7xl mx-auto py-4 mt-20 px-4 pb-20;
+  }
+
+  .footer2__container {
+    @apply mx-auto w-full max-w-[1400px];
+  }
+
+  /* nav */
+  .nav {
+    @apply absolute z-10 left-1/2 bg-background sm:top-[96px] top-[68px] px-3 translate-x-[-50%] font-poppins hidden md:block;
+  }
+  .admin__nav {
+    @apply max-w-6xl mx-auto mt-14 border-t border-b border-dashed flex items-center justify-between py-4;
+  }
+
+  /* page */
+  .page__title {
+    @apply font-nanum;
+
+    > h1 {
+      @apply text-center font-black text-3xl leading-10 md:text-5xl font-poppins uppercase mb-1;
+    }
+    > h2 {
+      @apply text-center text-xl md:text-2xl font-human mb-2;
+    }
+    > h3 {
+      @apply text-base md:text-lg font-human mt-6 mb-1 text-zinc-800 dark:text-zinc-50;
+    }
+    > p {
+      @apply text-zinc-500 dark:text-zinc-400 leading-6 text-sm break-keep text-center mb-10;
+    }
+  }
+
+  /* user */
+  .user__title {
+    @apply font-nanum;
+
+    > h2 {
+      @apply text-center text-xl md:text-2xl font-human mb-2;
+    }
+    > h3 {
+      @apply text-base md:text-lg font-human mt-6 mb-1 text-zinc-800 dark:text-zinc-50;
+    }
+    > p {
+      @apply text-zinc-500 dark:text-zinc-400 leading-6 text-sm break-keep;
+    }
+    li {
+      @apply text-zinc-500 dark:text-zinc-400 text-sm leading-6 list-disc list-inside ml-2;
+    }
+  }
+
+  /* intro */
+  .intro__title {
+    @apply font-nanum;
+
+    > h2 {
+      @apply text-xl md:text-2xl font-human mb-2;
+    }
+    > h3 {
+      @apply text-base md:text-lg font-human mt-6 mb-1 text-zinc-800 dark:text-zinc-50;
+    }
+    > p {
+      @apply text-zinc-500 dark:text-zinc-400 leading-6 text-sm break-keep mb-10;
+    }
+    li {
+      @apply text-zinc-500 dark:text-zinc-400 text-sm leading-6 list-disc list-inside ml-2;
+    }
+    em {
+      @apply not-italic underline underline-offset-4;
+    }
+  }
+
+  /* post */
+  .post__title {
+    @apply font-nanum;
+
+    > h2 {
+      @apply text-center text-xl md:text-2xl font-human mb-2;
+    }
+    .info {
+      @apply text-xs text-center text-zinc-500 mb-4;
+    }
+    .view {
+      @apply flex gap-1 items-center bg-gray-200 px-4 py-1 rounded-2xl text-sm text-gray-500 font-poppins;
+    }
+    .tag {
+      @apply sm:block hidden;
+
+      a {
+        @apply inline-block bg-gray-200 px-5 py-1 mx-1 rounded-full text-sm text-gray-700 hover:bg-gray-300 transition;
+      }
+    }
+    .like {
+      @apply ml-1;
+    }
+  }
+
+  /* post__layout */
+  .post__layout {
+    @apply flex flex-col md:flex-row gap-6 mt-10 relative min-h-screen;
+
+    .post__contents {
+      @apply flex-1 min-w-0 min-h-[500px] lg:border-r lg:pr-6;
+
+      > h3 {
+        @apply text-xl sm:text-2xl mb-4;
+      }
+      p {
+        @apply text-zinc-500 dark:text-zinc-100 text-[15px] leading-6 mb-4 break-words;
+      }
+      > h4 {
+        @apply mb-2 mt-8;
+      }
+      > h5 {
+        @apply text-zinc-500 dark:text-zinc-100 text-[15px] mb-1;
+      }
+      ul {
+        @apply mb-4 list-disc pl-4;
+      }
+      li {
+        @apply text-zinc-500 dark:text-zinc-100 text-[15px] leading-6;
+      }
+      em {
+        @apply not-italic;
+      }
+    }
+    .post__sidebar {
+      @apply md:w-[300px] md:h-[100vh] w-full h-auto shrink-0 sticky top-6;
+    }
+  }
+
+  /* refer */
+  .refer__title {
+    @apply font-nanum;
+
+    > h2 {
+      @apply text-center pt-10;
+    }
+  }
+  .refer__layout {
+    @apply md:grid md:grid-cols-[220px_minmax(0,1fr)] md:gap-6 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-10 px-4;
+  }
+  .refer__aside {
+    @apply fixed top-0 z-30 hidden h-[100vh] w-full shrink-0 border-r md:sticky md:block;
+  }
+  .refer__content {
+    @apply relative lg:gap-10 lg:py-10 xl:grid xl:grid-cols-[1fr_300px];
+
+    .cont {
+      @apply mx-auto w-full min-w-0 max-w-2xl;
+
+      h2 {
+        @apply text-4xl py-3;
+      }
+
+      p {
+        @apply text-zinc-500 font-nanum text-sm mb-4 leading-6.5;
+      }
+    }
+    .side {
+      @apply hidden text-sm xl:block;
+    }
+  }
+
+  /* common */
+  .circle {
+    @apply w-9 h-9 bg-background rounded-full items-center justify-center border ring ring-gray-300/20 hover:ring-gray-300/60 flex cursor-pointer;
+  }
+  .line {
+    @apply relative w-full;
+  }
+  .line::before {
+    content: '';
+    @apply absolute left-0 top-1/2 w-full h-[1px] bg-zinc-200 -translate-y-1/2 z-[-1];
+  }
+  .dark .line::before {
+    @apply bg-zinc-600;
+  }
+  .uline {
+    @apply underline underline-offset-4;
+  }
+  .list {
+    @apply border px-2.5 py-2 rounded text-gray-600 hover:bg-gray-200 cursor-pointer;
+  }
+  .small {
+    @apply text-zinc-500 text-[10px] pl-1;
+  }
+  .likes {
+    @apply bg-red-500 rounded-md text-xs text-white px-1 flex items-center justify-center;
+  }
+  .sperator {
+    @apply text-center text-zinc-500 text-sm;
+  }
+  .sperator span {
+    @apply bg-background px-4;
+  }
+  .tooltip {
+    @apply w-4 h-4 select-none absolute right-0 top-0 text-zinc-400 hover:text-zinc-800 transition-all duration-500;
+  }
+  .eye {
+    @apply absolute inset-y-0 right-3 flex items-center text-zinc-500 cursor-pointer;
+  }
+  .check {
+    @apply inline-flex items-center gap-1 bg-red-500 text-white rounded-full text-xs py-1 px-3;
+  }
+}
